@@ -7,6 +7,20 @@ public class Cliente {
     public Cliente(){
 
 
+    private String nomCli;
+    private int edad;
+    private String cedula;
+    private int cuentas;
+
+    public Cliente(String nomCli, int edad, String cedula, int cuentas) {
+
+        this.nomBanco = nomBanco;
+        this.tipo = tipo;
+        this.saldo = saldo;
+
+    }
+
+
     }
 
      /*
@@ -17,6 +31,12 @@ public class Cliente {
      */
     public void getCuentasList() {
 
+        return cuentas;
+       
     }
 
+
+
 }
+
+

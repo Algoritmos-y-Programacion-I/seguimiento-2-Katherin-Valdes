@@ -10,6 +10,7 @@ public class BancoIcesiUI {
      */
 
     private Scanner input;
+    private Controller controller;
 
     public static void main(String[] args) {
 
@@ -32,6 +33,12 @@ public class BancoIcesiUI {
     public void menu() {
 
         System.out.println("Bienvenido a BancoIcesi");
+
+        System.out.println("¿Cuantos clienes planeas registrar ?");
+        cantidad = input.nextLine();
+        int size = Integer.parseInt(cantidad);
+
+        controller = new Controller(size);
 
         int option = 0;
         do {
@@ -85,6 +92,17 @@ public class BancoIcesiUI {
      */
 
     public void registrarCliente() {
+
+        for (int i = 0; i < controller.getClientes().length; i++) {
+        System.out.println("Ingresa el nombre completo del cliente")
+        String nomCli = input.nextLine();
+        System.out.println("Ingresa el tipo de la cuenta")
+        String tipo = input.nextLine();
+        System.out.println("Ingresa el saldo que tiene la cuenta")
+        double saldo = input.nextInt();
+
+        TipoCuenta tipo = TipoCuenta.valueOf(tipo);
+    }
 
     }
 

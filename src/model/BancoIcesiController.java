@@ -7,6 +7,8 @@ public class BancoIcesiController {
      * Agregue los atributos (relaciones) necesarios para satisfacer los requerimientos.
      */
 
+    private Clientes[]
+
     public BancoIcesiController(){
 
     }
